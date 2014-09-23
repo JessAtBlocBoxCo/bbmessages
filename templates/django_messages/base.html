@@ -4,8 +4,13 @@
 {% load i18n %}
 {% load url from future %} 
 {% block bodyclass %}about{% endblock %}
+
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 {% block content %}  
+
 {% endblock %}
+</div>
+
 {% block sidebar %}
 <ul class="subnavilist">
     <li><a href="{% url 'messages_inbox' %} ">&raquo;&nbsp;{% trans "Inbox" %}</a></li>
@@ -14,3 +19,6 @@
     <li><a href="{% url 'messages_trash' %} ">&raquo;&nbsp;{% trans "Trash" %}</a></li>
 </ul>
 {% endblock %}
+
+
+
