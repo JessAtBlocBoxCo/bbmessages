@@ -13,10 +13,10 @@
 <div class="col-xs-12 col-sm-4">
 	<ul class="subnavilist">
 		<h4>Messages</h4>
-    <a href="{% url 'messages_inbox' %} ">&raquo;&nbsp;{% trans "Inbox" %}</a>
-    <a href="{% url 'messages_outbox' %} ">&raquo;&nbsp;{% trans "Sent Messages" %}</a>
-    <a href="{% url 'messages_compose' %} ">&raquo;&nbsp;{% trans "New Message" %}</a>
- 		<a href="{% url 'messages_trash' %} ">&raquo;&nbsp;{% trans "Trash" %}</a>
+    <p><a href="{% url 'messages_inbox' %} ">&raquo;&nbsp;{% trans "Inbox" %}</a> </p>
+    <p><a href="{% url 'messages_outbox' %} ">&raquo;&nbsp;{% trans "Sent Messages" %}</a> </p>
+    <p><a href="{% url 'messages_compose' %} ">&raquo;&nbsp;{% trans "New Message" %}</a> </p>
+ 		<p><a href="{% url 'messages_trash' %} ">&raquo;&nbsp;{% trans "Trash" %}</a> </p>
 	</ul>
 </div>
 {% endblock %}
